@@ -45,13 +45,12 @@ $('.square').on('click',function(){
     $("h2").text("It is O's turn");
     $(this).removeClass("O");
     this.classList.add("X");
-    turn++;
   }else if(turn%2 === 1){
     $("h2").text("It is X's turn");
     $(this).removeClass("X");
     this.classList.add("O");
-    turn++;
   }
+  turn++;
   oWinCons();
   xWinCons();
 });
